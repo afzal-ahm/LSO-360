@@ -3861,3 +3861,87 @@ img:hover {
     min-width: 140px; /* keeps feature column readable */
   }
 }
+
+/* CONTACT PAGE RESPONSIVE CSS FOR MOBILE */
+/* Base Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Form row (First + Last name) */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+/* Inputs full width */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Map responsive */
+.map-placeholder iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+}
+@media (max-width: 768px) {
+
+  /* 🔥 Stack layout */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* 🔥 First + Last name stack */
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Padding adjust */
+  .contact-form-wrap {
+    padding: 15px;
+  }
+
+  /* Titles */
+  .form-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .form-sub {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* Info cards spacing */
+  .info-card {
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  /* Icons smaller */
+  .info-icon {
+    font-size: 18px;
+  }
+
+  /* Map height smaller */
+  .map-placeholder iframe {
+    height: 220px;
+  }
+
+  /* Button full width */
+  .form-submit {
+    width: 100%;
+  }
+}
