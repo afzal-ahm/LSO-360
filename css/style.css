@@ -3820,3 +3820,44 @@ img:hover {
   transform: scale(1.03);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+
+/* TOOL PAGE TABLE FIX */
+@media (max-width: 768px) {
+
+  .seo-compare {
+    padding: 10px;
+  }
+
+  .compare-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .compare-sub {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* 🔥 Main fix */
+  .compare-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .compare-table th:first-child,
+  .compare-table td:first-child {
+    text-align: left;
+    min-width: 140px; /* keeps feature column readable */
+  }
+}
